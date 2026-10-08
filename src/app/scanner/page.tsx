@@ -65,6 +65,19 @@ export default function ScannerPage() {
       }
       setUser(data.user);
       initCameraList();
+
+      // Check URL query parameters for auto-scan when scanned from HP camera app directly
+      if (typeof window !== 'undefined') {
+        const urlParams = new URLSearchParams(window.location.search);
+        const codeParam = urlParams.get('code');
+        const modeParam = urlParams.get('mode');
+        if (codeParam) {
+          if (modeParam === 'OUT') {
+            setScanMode('OUT');
+          }
+          processAttendance(codeParam);
+        }
+      }
     } catch {
       router.push('/login');
     } finally {

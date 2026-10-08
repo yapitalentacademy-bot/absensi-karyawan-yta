@@ -69,7 +69,7 @@ export const QRModal: React.FC<QRModalProps> = ({ employee, onClose }) => {
           {/* QR Code Canvas */}
           <div className="bg-white p-4 rounded-2xl inline-block border-4 border-slate-700 shadow-xl">
             <QRCodeSVG
-              value={employee.qrToken}
+              value={typeof window !== 'undefined' ? `${window.location.origin}/scanner?code=${employee.qrToken}` : employee.qrToken}
               size={170}
               level="H"
               includeMargin={true}
