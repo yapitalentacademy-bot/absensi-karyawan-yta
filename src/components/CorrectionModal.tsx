@@ -129,7 +129,7 @@ export const CorrectionModal: React.FC<CorrectionModalProps> = ({
           {/* Date & Status */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs font-semibold text-slate-300 mb-1 flex items-center gap-1">
+              <label className="flex items-center gap-1 text-xs font-semibold text-slate-300 mb-1">
                 <Calendar className="w-3.5 h-3.5 text-slate-400" /> Tanggal Absensi
               </label>
               <input
@@ -158,7 +158,7 @@ export const CorrectionModal: React.FC<CorrectionModalProps> = ({
           {/* Clock In & Clock Out */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 bg-slate-800/50 p-3.5 rounded-xl border border-slate-700/50">
             <div>
-              <label className="block text-xs font-semibold text-slate-300 mb-1 flex items-center gap-1">
+              <label className="flex items-center gap-1 text-xs font-semibold text-slate-300 mb-1">
                 <Clock className="w-3.5 h-3.5 text-emerald-400" /> Jam Masuk (WIB)
               </label>
               <input
@@ -171,7 +171,7 @@ export const CorrectionModal: React.FC<CorrectionModalProps> = ({
             </div>
             <div>
               <div className="flex items-center justify-between mb-1">
-                <label className="block text-xs font-semibold text-slate-300 flex items-center gap-1">
+                <label className="flex items-center gap-1 text-xs font-semibold text-slate-300">
                   <Clock className="w-3.5 h-3.5 text-amber-400" /> Jam Pulang (WIB)
                 </label>
                 <label className="inline-flex items-center text-[10px] text-slate-400 cursor-pointer">
@@ -196,7 +196,7 @@ export const CorrectionModal: React.FC<CorrectionModalProps> = ({
 
           {/* Mandatory Reason for Correction */}
           <div className="bg-amber-500/10 border border-amber-500/30 p-3.5 rounded-xl space-y-2">
-            <label className="block text-xs font-bold text-amber-300 flex items-center gap-1">
+            <label className="flex items-center gap-1 text-xs font-bold text-amber-300">
               <AlertTriangle className="w-3.5 h-3.5 text-amber-400" /> Alasan Koreksi Manual (Wajib Isi)
             </label>
             <textarea
