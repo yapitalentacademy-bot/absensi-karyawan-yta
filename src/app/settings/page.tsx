@@ -135,7 +135,7 @@ export default function SettingsPage() {
               <form onSubmit={handleSaveSettings} className="space-y-5">
                 {/* Company Name */}
                 <div>
-                  <label className="block text-xs font-semibold text-slate-300 mb-1.5 flex items-center gap-1.5">
+                  <label className="flex items-center gap-1.5 text-xs font-semibold text-slate-300 mb-1.5">
                     <Building className="w-4 h-4 text-amber-400" /> Nama Perusahaan / Instansi
                   </label>
                   <input
@@ -150,7 +150,7 @@ export default function SettingsPage() {
                 {/* Work Start Time & Late Threshold */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-slate-900/60 p-4 rounded-2xl border border-slate-800">
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1.5 flex items-center gap-1.5">
+                    <label className="flex items-center gap-1.5 text-xs font-semibold text-slate-300 mb-1.5">
                       <Clock className="w-4 h-4 text-emerald-400" /> Jam Masuk Kerja Standar (WIB)
                     </label>
                     <input
@@ -164,7 +164,7 @@ export default function SettingsPage() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1.5 flex items-center gap-1.5">
+                    <label className="flex items-center gap-1.5 text-xs font-semibold text-slate-300 mb-1.5">
                       <ShieldCheck className="w-4 h-4 text-amber-400" /> Toleransi Keterlambatan (Menit)
                     </label>
                     <input
